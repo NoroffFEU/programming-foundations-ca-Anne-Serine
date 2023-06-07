@@ -64,17 +64,14 @@ button3.innerHTML = "Awake";
 button4.innerHTML = "Whistle";
 
 
-var munchinSound = new Audio();
-munchinSound.src = "/sound/munchin-95618.mp3";
-
-var whistleSound = new Audio();
-whistleSound.src = "/sound/whistle-96483.mp3";
-
+var sound = new Audio();
 
 function eat() {
   output.innerHTML = hamster.eat.eatText();
   output.innerHTML += '<img class="hamster-pic hamster-eat-pic" src="' + hamster.eat.imgUrl + '">';
-  munchinSound.play();
+  sound.src = "/sound/munchin-95618.mp3";
+  sound.pause();
+  sound.play();
 }
 
 button1.onclick = eat;
@@ -82,6 +79,7 @@ button1.onclick = eat;
 function sleep() {
   output.innerHTML = hamster.sleep.sleepText();
   output.innerHTML += '<img class="hamster-pic" src="' + hamster.sleep.imgUrl + '">';
+  sound.pause();
 }
 
 button2.onclick = sleep;
@@ -89,6 +87,7 @@ button2.onclick = sleep;
 function awake() {
   output.innerHTML = hamster.awake.awakeText();
   output.innerHTML += '<img class="hamster-pic" src="' + hamster.awake.imgUrl + '">';
+  sound.pause();
 }
 
 button3.onclick = awake;
@@ -96,7 +95,9 @@ button3.onclick = awake;
 function whistle() {
   output.innerHTML = hamster.whistle.whistleText();
   output.innerHTML += '<img class="hamster-pic" src="' + hamster.whistle.imgUrl + '">';
-  whistleSound.play();
+  sound.src = "/sound/whistle-96483.mp3";
+  sound.pause();
+  sound.play();
 }
 
 button4.onclick = whistle;
