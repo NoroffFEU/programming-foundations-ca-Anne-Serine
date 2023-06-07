@@ -7,23 +7,29 @@ const hamster = {
   yearOfBirth: 2022,
   favoriteFood: ["apple", "grapes", "cucumber", "melon"],
   respondsWhenYouWhistle: true,
-  eat: function () {
-    console.log(
-      "Stuffs as much food as he can in his mouth, so that he gets chubby cheeks"
-    );
+  eat: {
+    imgUrl: "/images/hamster-hamster-eating.gif",
+    eatText: function () {
+      return "- Tripple X stuffs as much food as he can in his mouth, so that he gets chubby cheeks -";
+    },
   },
-  sleep: function () {
-    console.log("Resting to be ready for an active night");
+  sleep: {
+    imgUrl: "/images/hamster_sleeping.png",
+    sleepText: function () {
+      return "- Tripple X is resting to be ready for an active night -";
+    },
   },
-  awake: function () {
-    console.log(
-      "Tripple X Baltazar runs in his exercise wheel, grooming and playing around"
-    );
+  awake: {
+    imgUrl: "/images/hamster_playing.png",
+    awakeText: function () {
+      return "- Tripple X is playing around, grooming and running in his exercise wheel -";
+    },
   },
-  whistle: function () {
-    console.log(
-      "Tripple X Baltazar looks out the door of his wooden house, and comes out to say hi"
-    );
+  whistle: {
+    imgUrl: "/images/hamster_says_hi.png",
+    whistleText: function () {
+      return "- Tripple X looks out the door of his wooden house, and comes out to say hi -";
+    },
   },
 };
 
@@ -35,40 +41,37 @@ var button3 = document.querySelector("#button3");
 var button4 = document.querySelector("#button4");
 var output = document.querySelector("#output");
 
-
-heading.innerHTML = ("Trippel X Baltazar");
-subHeading.innerHTML = ("- the dwarf hamster -");
+heading.innerHTML = hamster.name;
+subHeading.innerHTML = "- the dwarf hamster -";
 button1.innerHTML = "Eat";
 button2.innerHTML = "Sleep";
 button3.innerHTML = "Awake";
 button4.innerHTML = "Whistle";
 
-
 function eat() {
-  output.innerHTML = "Stuffs as much food as he can in his mouth, so that he gets chubby cheeks";
+  output.innerHTML = hamster.eat.eatText();
+  output.innerHTML += '<img class="hamster-pic hamster-eat-pic" src="' + hamster.eat.imgUrl + '">';
 }
 
 button1.onclick = eat;
 
-
 function sleep() {
-  output.innerHTML = "Resting to be ready for an active night";
+  output.innerHTML = hamster.sleep.sleepText();
+  output.innerHTML += '<img class="hamster-pic" src="' + hamster.sleep.imgUrl + '">';
 }
 
 button2.onclick = sleep;
 
-
 function awake() {
-  output.innerHTML = "Tripple X Baltazar runs in his exercise wheel, grooming and playing around";
+  output.innerHTML = hamster.awake.awakeText();
+  output.innerHTML += '<img class="hamster-pic" src="' + hamster.awake.imgUrl + '">';
 }
 
 button3.onclick = awake;
 
-
 function whistle() {
-  output.innerHTML = "Tripple X Baltazar looks out the door of his wooden house, and comes out to say hi"
+  output.innerHTML = hamster.whistle.whistleText();
+  output.innerHTML += '<img class="hamster-pic" src="' + hamster.whistle.imgUrl + '">';
 }
 
 button4.onclick = whistle;
-
-
