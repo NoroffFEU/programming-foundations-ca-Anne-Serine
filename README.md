@@ -27,7 +27,9 @@ This object has the following properties:
 - YearOfBirth (Number), the year the hamster was born
 - FavoriteFood (Array), the different types of the hamsters favorite food
 - RespondsWhenYouWhistle (Boolean), shows if the hamster responds to whistling
-- Whistle (Function), 
-- Sleep (Function)
-- Awake (Function)
-- Eat (Function)
+- Whistle (Function), puts out a string of text that describes what the hamster do when you whistle
+- Sleep (Function), puts out a string of text that describes that the hamster is sleeping
+- Awake (Function),puts out a string of text that describes what the hamster do when it is awake
+- Eat (Function),puts out a string of text that describes the hamster eating
+
+
