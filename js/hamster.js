@@ -79,7 +79,9 @@ button1.onclick = eat;
 function sleep() {
   output.innerHTML = hamster.sleep.sleepText();
   output.innerHTML += '<img class="hamster-pic" src="' + hamster.sleep.imgUrl + '">';
+  sound.src = "/sound//snoring-71560.mp3";
   sound.pause();
+  sound.play();
 }
 
 button2.onclick = sleep;
@@ -87,7 +89,9 @@ button2.onclick = sleep;
 function awake() {
   output.innerHTML = hamster.awake.awakeText();
   output.innerHTML += '<img class="hamster-pic" src="' + hamster.awake.imgUrl + '">';
+  sound.src = "/sound/soap-bubbles-pop-96873.mp3";
   sound.pause();
+  sound.play();
 }
 
 button3.onclick = awake;

@@ -5,7 +5,7 @@
 Using JavaScript Notation to describe a real item from my everyday life as an object.
 
 This item contain well-named properties that describe my chosen item.
-Required properties:
+Required property types:
 
 - String
 - Number
@@ -27,7 +27,7 @@ This object has the following properties:
 - YearOfBirth (Number), the year the hamster was born
 - FavoriteFood (Array), the different types of the hamsters favorite food
 - RespondsWhenYouWhistle (Boolean), shows if the hamster responds to whistling
-- Whistle (Function),
+- Whistle (Function), 
 - Sleep (Function)
 - Awake (Function)
 - Eat (Function)
