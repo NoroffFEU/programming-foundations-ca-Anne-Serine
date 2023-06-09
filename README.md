@@ -36,51 +36,18 @@ This object has the following properties:
 
 Eat, Sleep, Awake and Whistle are nested objects which contains image source, and a function
 
-sleep: {
-imgUrl: "/images/hamster_sleeping.png",
-sleepText: function () {
-return "- Tripple X is resting to be ready for an active night -";
-},
-}
+# Array of objects
 
-# Arrays of objects
+Added an array of objects, called " cageInventory ", which describes the different items inside the hamster cage
 
-I added an array of objects, which describes the different items inside the hamster cage
+# User Interface
 
-cageInventory: [
-{
-item: "water bottle",
-color: "clear",
-quantity: 1,
-material: "plastic",
-},
-{
-item: "exercise wheel",
-color: "clear",
-quantity: 1,
-material: "plastic",
-},
-{
-item: "house",
-color: "brown",
-quantity: 1,
-material: "wood",
-},
-{
-item: "food bowl",
-color: "grey",
-quantity: 1,
-material: "ceramic",
-},
-{
-item: "sand bath",
-color: "red",
-quantity: 1,
-material: "plastic",
-},
-],
+Built a simple UI with HTML and CSS, where the different text strings and functions are appended with javascript, based on the data and functions that are provided by the object.
 
-# References:
+
+
+
+References:
 
 Pictures : Freepik
 Sound: Pixabay
