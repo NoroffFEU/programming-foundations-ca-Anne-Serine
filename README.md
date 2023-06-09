@@ -32,4 +32,56 @@ This object has the following properties:
 - Awake (Function),puts out a string of text that describes what the hamster do when it is awake
 - Eat (Function),puts out a string of text that describes the hamster eating
 
+# Nested objects
+
+Eat, Sleep, Awake and Whistle are nested objects which contains image source, and a function
+
+sleep: {
+    imgUrl: "/images/hamster_sleeping.png",
+    sleepText: function () {
+      return "- Tripple X is resting to be ready for an active night -";
+    },
+}
+
+# Arrays of objects
+
+I added an array of objects, which describes the different items inside the hamster cage
+
+cageInventory: [
+    {
+      item: "water bottle",
+      color: "clear",
+      quantity: 1,
+      material: "plastic",
+    },
+    {
+      item: "exercise wheel",
+      color: "clear",
+      quantity: 1,
+      material: "plastic",
+    },
+    {
+      item: "house",
+      color: "brown",
+      quantity: 1,
+      material: "wood",
+    },
+    {
+      item: "food bowl",
+      color: "grey",
+      quantity: 1,
+      material: "ceramic",
+    },
+    {
+      item: "sand bath",
+      color: "red",
+      quantity: 1,
+      material: "plastic",
+    },
+  ],
+
+# References:
+
+Pictures : Freepik
+Sound: Pixabay
 
