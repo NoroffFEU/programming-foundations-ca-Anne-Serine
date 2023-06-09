@@ -44,10 +44,7 @@ Added an array of objects, called " cageInventory ", which describes the differe
 
 Built a simple UI with HTML and CSS, where the different text strings and functions are appended with javascript, based on the data and functions that are provided by the object.
 
+# References:
 
-
-
-References:
-
-Pictures : Freepik
-Sound: Pixabay
+- Pictures : Freepik
+- Sound: Pixabay
